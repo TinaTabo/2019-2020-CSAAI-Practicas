@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Currículum Vítae de Sheldon Lee Cooper</title>
+    <!---Dentro de la etiqueta style se programa todo el css--->
+    <link rel="stylesheet" href="cv.css">
+  </head>
+
+  <body>
+    <div class="header">
+      <div align="center">
+        <img src="nombre.JPG" alt="Sheldon Lee Cooper">
+      </div>
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div align="rigth size">
+          <img src="foto perfil.jpg" alt="Sheldon Lee Cooper" width="165" height="250">
+        </div>
+        <h2 class="h2-izq">Información personal</h2>
+        <h4 class="h4-izq">Ocupación</h4>
+        <p class="p-izq">Físico Teórico</p>
+        <p class="p-izq">en la Universidad de Caltech</p>
+
+        <h4 class="h4-izq">Especialidad</h4>
+        <p class="p-izq">Materia oscura</p>
+        <p class="p-izq">Anteriormente Teoría de Cuerdas.</p>
+
+        <h4 class="h4-izq">Nacimiento</h4>
+        <p class="p-izq">26 de febrero, Medford, Texas</p>
+
+        <h4 class="h4-izq">Nacionalidad</h4>
+        <p class="p-izq">Estadounidense</p>
+
+        <h4 class="h4-izq">Dirección</h4>
+        <p class="p-izq">Pasadena, California, Estados Unidos</p>
+        <h4 class="h4-izq">Permiso de conducir</h4>
+        <p class="p-izq">B (pero nadie debe saberlo)</p>
+
+        <h4 class="h4-izq">Intereses</h4>
+        <li class="p-izq">Aprender idiomas</li>
+        <li class="p-izq">Ver series y peliculas</li>
+        <li class="p-izq">Jugar al paintball</li>
+        <li class="p-izq">Leer cómics de superhéroes</li>
+
+        <h4 class="h4-izq">Idiomas</h4>
+        <li class="p-izq">Inglés(Nativo)</li>
+        <li class="p-izq">Mandarín</li>
+        <li class="p-izq">Filandés</li>
+        <li class="p-izq">Klingon</li>
+      </div>
+      <div class="rightcolumn">
+        <h2 class="h2-der">Quien Soy</h2>
+
+        <h4 class="h4-der">Coeficiente intelectual</h4>
+        <p class="p-der">Poseo un Coeficiente intelectual de 180.</p>
+
+        <h4 class="h4-der">En el campo de la Física</h4>
+        <p class="p-der">Defiendo la teoría de cuerdas como modelo fundamental de la física,
+        en contraposición a la teoría de la gravedad cuántica de bucles,
+        defendida por Leslie Winkle. Me inclino por la interpretación de los multiversos de la
+        física cuántica, la misma que suele verse en aspectos en la Teoría M. </p>
+
+        <h4 class="h4-der">En el Deporte</h4>
+        <p class="p-der">Practico paintball de forma regular, siempre el mismo
+          dia de la semana, soy un mas que excelente líder, perdemos por culpa de un equipo
+          que es inutil siguiendo ordenes.
+          Poseo grandes conocimientos sobre fútbol americano (en contra de mi voluntad).
+          también soy bueno jugando a los bolos y en el manejo de la cometa.</p>
+          <div align="center">
+            <img src="equipo de paintball.jpg" alt="Equipo">
+          </div>
+
+        <h4 class="h4-der">Estudios</h4>
+          <li class="p-der">Graduado en Física por la Universidad de Texas</li>
+          <li class="p-der">Doctorado en Física por la Universidad de Texas</li>
+          <li class="p-der">Doctorado en Física experimental por la Universidad de Caltech</li>
+          <div align="center">
+            <img src="universidad.jpg" alt="Universidad de Caltech">
+          </div>
+
+        <h4 class="h4-der">Reconocimientos</h4>
+          <li class="p-der">Premio Stevenson (a los 14 años)</li>
+          <li class="p-der">Premio Canciller de ciencia.</li>
+          <li class="p-der">Premio Novel de Física junto a la doctora Amy Farrah Fowler por el descubrimiento
+          de la superasimetría.</li>
+          <div align="center">
+            <img src="novel.png" alt="Universidad de Caltech">
+          </div>
+
+        <h4 class="h4-der">Mi número favorito</h4>
+        <p class="p-der">El 73, dado que es el 21º número primo,
+        leído al revés es el 37 que es el 12º número primo que leído al revés
+        es 21 que es el resultado de multiplicar 7 × 3; 7³ es 343, capicúa;
+        y en sistema binario 73 es 1001001, un palíndromo. En sistema octal 73 es
+        111 el cual es un palíndromo.</p>
+        <div align="center">
+          <script type="text/javascript" language="javascript">
+            function mostrar_imagen(id){
+              img = document.getElementById(id);
+              img.innerHTML = '<img src= "bazinga.jpg"/>';
+            }
+            function ocultar_imagen(id){
+              img = document.getElementById(id);
+              img.innerHTML = '';
+            }
+          </script>
+
+          <input type="button" value="Contáctame!" onclick="javascript:mostrar_imagen('imagen')"/>
+          <br/>
+          <div id="imagen">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

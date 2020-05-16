@@ -1,0 +1,111 @@
+/* Fondo de la página */
+body {
+    background-image: url(fondo_principal.jpg);
+    background-size: cover;
+    margin: 0;
+}
+
+/* Estilo para el canvas*/
+#canvas {
+  background-image: url(fondo_pista.jpg);
+  background-size: cover;
+  margin: 0;
+  border-radius: 20px 20px 20px 20px;
+  border: 5px solid #3d84a8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-right: auto;
+  margin-left: 400px;
+  width: 550px;
+}
+
+.color1{
+  font-family: "calibri", Garamond, 'Comic Sans';
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  color: #D80404;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 5px 0px rgba(0,0,0,1), 0px 10px 0px rgba(255,255,255,0.7);
+}
+.color2{
+  font-family: "calibri", Garamond, 'Comic Sans';
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  color: #E0E302;
+  font-size: 50px;
+  text-align: center;
+}
+.color3{
+  font-family: "calibri", Garamond, 'Comic Sans';
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  color: #21E506;
+  font-size: 50px;
+  text-align: center;
+}
+.color4{
+  font-family: "calibri", Garamond, 'Comic Sans';
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  color: #9422E7;
+  font-size: 50px;
+  text-align: center;
+}
+
+.button1{
+  background-color:#21E506;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: italic;
+  font-weight: bold;
+  margin: 2px 2px;
+  border-radius: 20px 20px 20px 20px;
+  border: 3px solid #3d84a8;
+  margin-left: 400px;
+}
+.button2{
+  background-color:#21E506;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: italic;
+  font-weight: bold;
+  margin: 2px 2px;
+  border-radius: 20px 20px 20px 20px;
+  border: 3px solid #3d84a8;
+}
+button:hover {
+  background-color: #D80404;
+  color: white;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 5px 20px 0 rgba(0,0,0,0.19);
+}
+
+.text1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #9422E7;
+  text-align: center;
+  padding: 3px 3px;
+  font-size: 18px;
+  margin: 5px 5px;
+}
+
+.text2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 8px;
+  color: black;
+  text-align: center;
+  padding: 3px 3px;
+  font-size: 18px;
+  margin: 5px 5px;
+}
