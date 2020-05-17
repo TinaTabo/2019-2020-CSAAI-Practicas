@@ -1,0 +1,71 @@
+body{
+  background-image: url(https://github.com/TinaTabo/Extra-CSAAI/raw/master/fondo-de-metal.jpg);
+}
+
+@font-face {
+  font-family: "Kamikaze";
+  src : url("Kamikaze.ttf");
+}
+
+p{
+  font-family: "Kamikaze";
+  font-size: 50px;
+  font-weight: bold;
+  color: #7B7B80;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 5px 0px rgba(0,0,0,1), 3px 6px 2px rgba(255,255,255,0.7);
+  margin-left: 45px;
+}
+
+button{
+  background-color:#4A4C4F;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  font-family: fantasy;
+  font-weight: bold;
+  margin: 5px 5px;
+  margin-left: 16px;
+  border-radius: 20px 20px 20px 20px;
+  border: 3px solid #09090A;
+  width: 200px;
+}
+
+button:hover {
+  background-color: #647DA3;
+  color: #00005B;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 5px 20px 0 rgba(0,0,0,0.19);
+}
+
+.mainplayer{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 705px;
+  height: 500px;
+}
+
+.videos{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#player1{
+  padding-left: 200px;
+  padding-right: 70px;
+  float: left; /*Posicionamiento flotante */
+}
+
+#player2,#player3{
+  padding-left: 70px;
+  padding-right: 70px;
+  float: left; /*Posicionamiento flotante */
+}
+
+#player4{
+  padding-left: 590px;
+  padding-right: 70px;
+  float: left; /*Posicionamiento flotante */
+}
