@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>Procesador de imágenes</title>
     <script src="filtro.js" defer></script>
     <link rel="stylesheet" href="filtro.css">
   </head>
+
   <body>
-    <img src="perritos.jpg" id="imagesrc">
-    <canvas id="canvas"></canvas>
-    <p>Establece el umbral de rojo:</p>
-    <input type="range" id="deslizador" min="0" max="255" value="255"/>
-    <p id="range_value">00</p>
+
+    <h1>PROCESADOR DE IMAGENES</h1>
+
+    <div class="images">
+      <img src="japon.jpg" id="imagesrc">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="filters">
+      <button id="bw">BLANCO Y NEGRO</button>
+      <button id="rgb">COMPONENTES RGB</button>
+      <button id="negative">NEGATIVO</button>
+    </div>
+
+    <br>
+
+    <div class="slippers">
+      <b>R:</b>
+      <input type="range" id="R" min="0" max="255" value="255"/>
+      <b>G:</b>
+      <input type="range" id="G" min="0" max="255" value="255"/>
+      <b>B:</b>
+      <input type="range" id="B" min="0" max="255" value="255"/>
+      <br>
+      <b>RGB: </b>
+      <b id="value_R">255</b>
+      <b id="value_G">255</b>
+      <b id="value_B">255</b>
+    </div>
+
   </body>
 </html>
