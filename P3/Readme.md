@@ -8,3 +8,4 @@ COMO JUGAR: (Navegador recomendado: Google Chrome)
  4. El primer jugador en llegar a 3 puntos GANA.
  5. Cuando uno de los jugadores gane, pulsar RESET GAME para volver a jugar.
  MEJORAS: Se han introducido distintos sonidos (musica de fondo, rebore de las raquetas, anotaciones de tantos, melodia de ganador)
+https://tinatabo.github.io/2019-2020-CSAAI-Practicas/P3/Pong/pong-final.html
