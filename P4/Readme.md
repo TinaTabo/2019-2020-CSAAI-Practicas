@@ -8,3 +8,4 @@ CÓMO FUNCIONA:
     el número del canal (1, 2, 3)
  3. Para parar la reproducción, basta con selecionar EMISIÓN EN PRUEBAS, que detendrá el reproductor mostrando la imagen 
     estática de barras de colores.
+https://tinatabo.github.io/2019-2020-CSAAI-Practicas/P4/video.html
