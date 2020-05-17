@@ -3,6 +3,13 @@ console.log("Ejecutando JS....")
 const canvas = document.getElementById('canvas');
 const img = document.getElementById('imagesrc')
 const ctx = canvas.getContext('2d');
+const deslizador = document.getElementById('deslizador');
+const display = document.getElementById('display');
+
+deslizador.oninput = () => {
+  display.innerHTML = deslizador.value
+}
+
 //-- Función de retrollamada de imagen cargada
 //-- La imagen no se carga instantaneamente, sino que
 //-- lleva un tiempo. Sólo podemos acceder a ella una vez
