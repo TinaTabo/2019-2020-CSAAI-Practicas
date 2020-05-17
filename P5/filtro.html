@@ -12,10 +12,12 @@
 
     <h1>PROCESADOR DE IMAGENES</h1>
 
+    <div class="text">
+      <p>Imagen Original - Imagen filtrada</p>
+    </div>
+
     <div class="images">
-      <p>Imagen Original</p>
       <img src="japon.jpg" id="imagesrc">
-      <p>Imagen Filtrada</p>
       <canvas id="canvas"></canvas>
     </div>
 
@@ -23,9 +25,10 @@
       <button id="bw">BLANCO Y NEGRO</button>
       <button id="rgb">COMPONENTES RGB</button>
       <button id="negative">NEGATIVO</button>
+      <button id="sepia">SEPIA</button>
     </div>
 
-    <div class="slippers">
+    <div class="sliders">
       <b>R:</b>
       <input type="range" id="R" min="0" max="255" value="255"/>
       <b>G:</b>

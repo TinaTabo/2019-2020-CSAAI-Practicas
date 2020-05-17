@@ -5,9 +5,9 @@ const img = document.getElementById('imagesrc')
 const ctx = canvas.getContext('2d');
 
 // Deslizadores:
-const slipper_R = document.getElementById('R');
-const slipper_G = document.getElementById('G');
-const slipper_B = document.getElementById('B');
+const slider_R = document.getElementById('R');
+const slider_G = document.getElementById('G');
+const slider_B = document.getElementById('B');
 // Valores de los deslizadores:
 const value_R = document.getElementById('value_R');
 const value_G = document.getElementById('value_G');
@@ -17,6 +17,7 @@ const value_B = document.getElementById('value_B');
 const bw = document.getElementById('bw');
 const rgb = document.getElementById('rgb');
 const negative = document.getElementById('negative');
+const sepia = document.getElementById('sepia');
 
 
 // Función de retrollamada de imagen cargada
@@ -57,66 +58,66 @@ bw.onclick = () => {
 // MODO COMPONENTES RGB
 rgb.onclick = () => {
   // Control deslizador R
-  slipper_R.oninput = () => {
+  slider_R.oninput = () => {
     console.log("Aplicando filtro componentes RGB componente R");
-    value_R.innerHTML = slipper_R.value;
+    value_R.innerHTML = slider_R.value;
     ctx.drawImage(img, 0,0);
     let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     let data = imgData.data;
 
     for (var i = 0; i < data.length; i+=4) {
-      if (data[i] > slipper_R.value){
-        data[i] = slipper_R.value;
+      if (data[i] > slider_R.value){
+        data[i] = slider_R.value;
       }
-      if (data[i+1] > slipper_G.value){
-        data[i+1] = slipper_G.value;
+      if (data[i+1] > slider_G.value){
+        data[i+1] = slider_G.value;
       }
-      if (data[i+2] > slipper_B.value){
-        data[i+2] = slipper_B.value;
+      if (data[i+2] > slider_B.value){
+        data[i+2] = slider_B.value;
       }
     }
     ctx.putImageData(imgData, 0, 0);
   }
 
   // Control deslizador G
-  slipper_G.oninput = () => {
+  slider_G.oninput = () => {
     console.log("Aplicando filtro componentes RGB componente G");
-    value_G.innerHTML = slipper_G.value;
+    value_G.innerHTML = slider_G.value;
     ctx.drawImage(img, 0,0);
     let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     let data = imgData.data;
 
     for (var i = 0; i < data.length; i+=4) {
-      if (data[i] > slipper_R.value){
-        data[i] = slipper_R.value;
+      if (data[i] > slider_R.value){
+        data[i] = slider_R.value;
       }
-      if (data[i+1] > slipper_G.value){
-        data[i+1] = slipper_G.value;
+      if (data[i+1] > slider_G.value){
+        data[i+1] = slider_G.value;
       }
-      if (data[i+2] > slipper_B.value){
-        data[i+2] = slipper_B.value;
+      if (data[i+2] > slider_B.value){
+        data[i+2] = slider_B.value;
       }
     }
     ctx.putImageData(imgData, 0, 0);
   }
 
   // Control deslizador B
-  slipper_B.oninput = () => {
+  slider_B.oninput = () => {
     console.log("Aplicando filtro componentes RGB componente B");
-    value_B.innerHTML = slipper_B.value;
+    value_B.innerHTML = slider_B.value;
     ctx.drawImage(img, 0,0);
     let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     let data = imgData.data;
 
     for (var i = 0; i < data.length; i+=4) {
-      if (data[i] > slipper_R.value){
-        data[i] = slipper_R.value;
+      if (data[i] > slider_R.value){
+        data[i] = slider_R.value;
       }
-      if (data[i+1] > slipper_G.value){
-        data[i+1] = slipper_G.value;
+      if (data[i+1] > slider_G.value){
+        data[i+1] = slider_G.value;
       }
-      if (data[i+2] > slipper_B.value){
-        data[i+2] = slipper_B.value;
+      if (data[i+2] > slider_B.value){
+        data[i+2] = slider_B.value;
       }
     }
     ctx.putImageData(imgData, 0, 0);
@@ -139,4 +140,22 @@ negative.onclick = () => {
   }
   ctx.putImageData(imgData, 0, 0);
   console.log("filtro negativo aplicado");
+}
+
+// MODO SEPIA
+sepia.onclick = () => {
+  console.log("Aplicando filtro sepia");
+  let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  let data = imgData.data;
+  // Calculamos el nivel de brillo y se lo asignamos a los 3 canales, ya que la suma
+  // de las componentes RGB en la misma proporción representa la escala de grises.
+  // OJO con el incremento: tenemos que incrementar de 4 en 4 no de 1 en 1.
+  for (var i = 0; i < data.length; i+= 4) {
+    bright = (.3*data[i] + .6*data[i + 1] + .1*data[i + 2]);
+    data[i] = Math.min(bright + 40, 255);
+    data[i + 1] = Math.min(bright + 15, 255);;
+    data[i + 2] = bright;
+  }
+  ctx.putImageData(imgData, 0, 0);
+  console.log("filtro sepia aplicado");
 }
