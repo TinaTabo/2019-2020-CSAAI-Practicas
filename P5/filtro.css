@@ -1,3 +1,7 @@
 body{
   background-color: grey;
 }
+
+#imagesrc{
+  display: none;
+}
