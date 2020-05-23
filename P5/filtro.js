@@ -8,10 +8,6 @@ const ctx = canvas.getContext('2d');
 const slider_R = document.getElementById('R');
 const slider_G = document.getElementById('G');
 const slider_B = document.getElementById('B');
-// Valores de los deslizadores:
-const value_R = document.getElementById('value_R');
-const value_G = document.getElementById('value_G');
-const value_B = document.getElementById('value_B');
 
 // Botones de los filtros.
 const bw = document.getElementById('bw');
@@ -60,7 +56,6 @@ rgb.onclick = () => {
   // Control deslizador R
   slider_R.oninput = () => {
     console.log("Aplicando filtro componentes RGB componente R");
-    value_R.innerHTML = slider_R.value;
     ctx.drawImage(img, 0,0);
     let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     let data = imgData.data;
@@ -82,7 +77,6 @@ rgb.onclick = () => {
   // Control deslizador G
   slider_G.oninput = () => {
     console.log("Aplicando filtro componentes RGB componente G");
-    value_G.innerHTML = slider_G.value;
     ctx.drawImage(img, 0,0);
     let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     let data = imgData.data;
@@ -104,7 +98,6 @@ rgb.onclick = () => {
   // Control deslizador B
   slider_B.oninput = () => {
     console.log("Aplicando filtro componentes RGB componente B");
-    value_B.innerHTML = slider_B.value;
     ctx.drawImage(img, 0,0);
     let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     let data = imgData.data;
